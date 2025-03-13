@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edutech Cursos</title>
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <nav class="bg-white border-2 border-gray-200 py-2.5">
+      <div
+        class="flex flex-wrap items-center justify-between max-w-screen-xl px-4 mx-auto"
+      >
+        <a href="./index.html" class="flex items-center">
+          <img
+            src="./assets/board-svgrepo-com.svg"
+            class="h-6 mr-3 sm:h-9"
+            alt="Logomarca da empresa"
+          />
+          <span class="self-center text-xl font-semibold whitespace-nowrap"
+            >Edutech</span
+          >
+        </a>
+        <div class="flex items-center lg:order-2">
+          <div class="hidden mt-2 mr-4 sm:inline-block">
+            <span></span>
+          </div>
+          <a
+            href="#"
+            class="text-white bg-purple-700 hover:bg-purple-800 focus:ring-4 focus:ring-purple-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 sm:mr-2 lg:mr-0 focus:outline-none"
+          >
+            Assinar
+          </a>
+          <!-- mobile -->
+          <button
+            data-collapse-toggle="mobile-menu-2"
+            type="button"
+            class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:ring-2 focus:ring-gray-200"
+            aria-controls="mobile-menu-2"
+          >
+            <!-- Acessibilidade -->
+            <span class="sr-only">Abrir o menu</span>
+            <img src="./assets/menu-svgrepo-com.svg" class="h-6 sm:h-9" />
+          </button>
+        </div>
+        <div
+          class="items-center justify-between w-full lg:flex lg:w-auto lg:order-1"
+          id="mobile-menu-2"
+        >
+          <ul
+            class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 pl-3 pr-4 text-white bg-purple-700 rounded-lg lg:bg-transparent lg:text-purple-700 lg:p-0"
+                aria-current="page"
+                >Página inicial</a
+              >
+            </li>
+            <li>
+              <a
+                href="./cursos.html"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded-lg border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0"
+              >
+                Cursos
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="./contato.html"
+                class="block py-2 pl-3 pr-4 text-gray-700 rounded-lg border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-purple-700 lg:p-0"
+              >
+                Contato
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Informações -->
+    <div class="grid grid-cols-1 md:grid-cols-2 mt-4 gap-2 lg:gap-6 p-10">
+      <div>
+        <img
+          src="./assets/bg-ilust.webp"
+          class="h-[80%] md:h-[90%] mx-auto"
+          alt="Ilustração da empresa"
+        />
+      </div>
+      <div class="md:pr-10 md:pt-6 md:mt-12">
+        <h1 class="text-3xl md:text-5xl text-black font-bold">
+          Edutech: Cursos de tecnologia ao seu alcance.
+        </h1>
+        <h4
+          class="text-xl text-gray-500 text-center font-semibold mt-4 md:mt-10"
+        >
+          Aprenda as
+          <a href="./cursos.html" class="underline hover:text-purple-500"
+            >tecnologias</a
+          >
+          mais requisitadas e consiga um emprego na área de TI
+        </h4>
+        <h4
+          class="text-xl text-gray-500 text-center font-semibold mt-1 md:mt-4"
+        >
+          Tenha suporte personalizado para suas necessidades, e solucione
+          dúvidas com nossos professores.
+        </h4>
+
+        <div class="mt-8 md:mt-16 mx-auto text-center">
+          <a
+            href="#planos-info"
+            class="bg-purple-400 hover:bg-purple-500 shadow-purple-300 shadow-md rounded-lg py-4 px-6 md:py-5 md:px-14 mx-auto"
+          >
+            <span class="text-white">Planos</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center my-4 md:my-8 lg:my-12">
+      <h3 class="mx-4 text-2xl text-center font-bold">
+        Escolha um plano de acordo com seu bolso:
+      </h3>
+      <p class="mx-6 text-lg text-gray-500 text-center font-semibold">
+        A partir de 40 reais por mês. Opções de pagamento recorrente ou
+        assinatura anual, no PIX, boleto ou cartão.
+      </p>
+    </div>
+
+    <!-- Menu de Planos -->
+    <div
+      id="planos-info"
+      class="grid grid-cols-1 md:grid-cols-2 lg:mt-10 lg:grid-cols-3 gap-5 lg:gap-10 p-10"
+    >
+      <div
+        class="bg-white hover:shadow-purple-300 hover:shadow-md rounded-lg bg-purple-50/30"
+      >
+        <div class="p-1 rounded-t-lg bg-white">
+          <div class="flex flex-col rounded p-5 lg:p-8">
+            <h3 class="text-3xl text-black font-bold">Estudante</h3>
+            <p class="py-1 text-sm">
+              Plano básico, com pagamento recorrente mensal.
+            </p>
+            <p class="text-6xl font-bold tracking-tight pt-5">R$ 40</p>
+            <p class="py-1 text-sm">Pagamento recorrente</p>
+            <div class="pt-3 flex flex-col gap-2">
+              <a
+                class="w-full bg-purple-400 hover:bg-purple-700 text-white font-medium text-center py-2 mt-3 rounded-md"
+                href="./contato.html"
+                >Assine agora</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white hover:shadow-purple-300 hover:shadow-md rounded-lg bg-purple-50/30"
+      >
+        <div class="p-1 rounded-t-lg bg-white">
+          <div class="flex flex-col rounded p-5 lg:p-8">
+            <h3 class="text-3xl text-black font-bold">Graduado</h3>
+            <p class="py-1 text-sm">Plano premium, com pagamento anual.</p>
+            <p class="text-6xl font-bold tracking-tight pt-5">R$420</p>
+            <p class="py-1 text-sm">PIX, boleto ou cartão (12x).</p>
+            <div class="pt-3 flex flex-col gap-2">
+              <a
+                class="w-full bg-purple-400 hover:bg-purple-700 text-white font-medium text-center py-2 mt-3 rounded-md"
+                href="./contato.html"
+                >Assine agora</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="bg-white hover:shadow-purple-300 hover:shadow-md rounded-lg bg-purple-50/30"
+      >
+        <div class="p-1 rounded-t-lg bg-white">
+          <div class="flex flex-col rounded p-5 lg:p-8">
+            <h3 class="text-3xl text-black font-bold">Einstein</h3>
+            <p class="py-1 text-sm">Plano VIP, com mais benefícios.</p>
+            <p class="text-6xl font-bold tracking-tight pt-5">R$600</p>
+            <p class="py-1 text-sm">PIX, boleto ou cartão (12x).</p>
+            <div class="pt-3 flex flex-col gap-2">
+              <a
+                class="w-full bg-purple-400 hover:bg-purple-700 text-white font-medium text-center py-2 mt-3 rounded-md"
+                href="./contato.html"
+                >Oportunidade única!</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script para responsividade (menu) -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuButton = document.querySelector(
+          "button[data-collapse-toggle]",
+        );
+        const menu = document.getElementById("mobile-menu-2");
+
+        menuButton.addEventListener("click", function () {
+          menu.classList.toggle("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
